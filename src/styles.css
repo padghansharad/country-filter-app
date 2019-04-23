@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+h1 { 
+  margin: 20px 0px 20px 0px;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.search-box {
+  font-size: 20px;
+  width: 100%;
+  font-family: 'Roboto Slab', serif;
+  margin-bottom: 20px;
+}

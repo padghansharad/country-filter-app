@@ -1,0 +1,17 @@
+<form>
+    <mat-form-field>
+      <input matInput type="text" placeholder="Enter Country Name" name="countrySearch" [(ngModel)]="countryFilter">
+    </mat-form-field>
+  </form>
+
+<mat-card>
+    <mat-list>
+     <mat-list-item *ngFor="let country of countriesToBeRendered | filterBy: countryFilter">
+         {{country}}
+     </mat-list-item>
+     
+<h3 *ngIf="(countriesToBeRendered | filterBy: countryFilter).length === 0">
+    No matching country found
+</h3>
+    </mat-list>
+</mat-card>
